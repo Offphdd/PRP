@@ -1,6 +1,6 @@
-/* 1. FaÁa um programa que receba o sal·rio-base de um funcion·rio. Uma funÁ„o com retorno
-dever· calcular o sal·rio a receber sabendo-se que esse funcion·rio tem gratificaÁ„o de 5% sobre o
-sal·rio-base e paga imposto de 7% sobre o sal·rio-base. */
+/* 1. Fa√ßa um programa que receba o sal√°rio-base de um funcion√°rio. Uma fun√ß√£o com retorno
+dever√° calcular o sal√°rio a receber sabendo-se que esse funcion√°rio tem gratifica√ß√£o de 5% sobre o
+sal√°rio-base e paga imposto de 7% sobre o sal√°rio-base. */
 
 
 #include <stdio.h>
@@ -21,11 +21,11 @@ scanf("%f", &n2);
 printf("Digite a terceira nota: \n");
 scanf("%f", &n3);
 
-//CHAMADA DA FUN«√O
+//CHAMADA DA FUN√á√ÉO
 R = media(n1, n2, n3);
 
-//SAÕDA DE DADOS
-printf("A mÈdia È: %.1f", R);
+//SA√çDA DE DADOS
+printf("A m√©dia √©: %.1f", R);
 
 }
 
