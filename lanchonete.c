@@ -1,11 +1,11 @@
-/* 1. O card·pio de uma lanchonete È o seguinte:
-EspecificaÁ„o PreÁo unit·rio
+/* 1. O card√°pio de uma lanchonete √© o seguinte:
+Especifica√ß√£o Pre√ßo unit√°rio
 100 Cachorro quente R$3,50
 101 Bauru simples R$4,00
 102 Bauru c/ovo R$4,50
 103 Hamburger R$4,00
 104 Cheeseburger R$3,00
-Escrever um algoritmo que leia o cÛdigo do item pedido, a quantidade e calcule o valor a ser pago
+Escrever um algoritmo que leia o c√≥digo do item pedido, a quantidade e calcule o valor a ser pago
 por aquele lanche. */
 
 #include <stdio.h>
