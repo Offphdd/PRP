@@ -16,7 +16,7 @@ scanf("%f", &n2);
 printf("Digite a terceira nota: \n");
 scanf("%f", &n3);
 
-//CHAMADA DA FUN«√O SEM RETORNO
+//CHAMADA DA FUN√á√ÉO SEM RETORNO
 media(n1, n2, n3);
 
 }
@@ -25,7 +25,7 @@ void media(float nota1, float nota2, float nota3){
     float media;
     media = (nota1 + nota2 + nota3) / 3;
 
-    //SAÕDA DE DADOS
-printf("A mÈdia È: %.1f", media);
+    //SA√çDA DE DADOS
+printf("A m√©dia √©: %.1f", media);
 
 }
