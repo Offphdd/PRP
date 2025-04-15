@@ -1,7 +1,7 @@
-/* 7. Faça um programa que receba o ano de nascimento de uma pessoa e o ano atual, calcule e
+/* 7. FaÃ§a um programa que receba o ano de nascimento de uma pessoa e o ano atual, calcule e
 mostre:
 a) a idade dessa pessoa;
-b) quantos anos essa pessoa terá em 2050 */
+b) quantos anos essa pessoa terÃ¡ em 2050 */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,7 +13,7 @@ int main()
 
     int nasc, atual, idade, idade2050;
 
-    printf("\nDigite o ano que você nasceu: ");
+    printf("\nDigite o ano que vocÃª nasceu: ");
     scanf("%d", &nasc);
 
     printf("\nDigite o ano atual: ");
@@ -22,6 +22,6 @@ int main()
     idade = atual - nasc;
     idade2050 = 2050 - nasc;
 
-    printf("\nSua idade é %d anos", idade);
-    printf("\nEm 2050, você terá %d anos\n", idade2050);
+    printf("\nSua idade Ã© %d anos", idade);
+    printf("\nEm 2050, vocÃª terÃ¡ %d anos\n", idade2050);
 }
