@@ -1,7 +1,6 @@
-/* 7. Faça um programa que receba o ano de nascimento de uma pessoa e o ano atual, calcule e
-mostre:
-a) a idade dessa pessoa;
-b) quantos anos essa pessoa terá em 2050 */
+/* 10. Faça um programa que receba a quantidade de dinheiro em reais e converta esse valor em dólar,
+euro e libras esterlinas. Sabe-se que a cotação do dólar é de R$ 4,96, do euro é de R$ 5,38 e da libra
+esterlina é de R$ 6,29. O programa deve fazer as conversões e mostrá-las. */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,17 +10,31 @@ int main()
 {
     setlocale(LC_ALL, "Portuguese");
 
-    int nasc, atual, idade, idade2050;
+    float real, dolar, euro, libra, convertido;
+    int codigo;
 
-    printf("\nDigite o ano que você nasceu: ");
-    scanf("%d", &nasc);
+    printf("\nDigite o valor a ser convertido: \n");
+    scanf("%f", &real);
 
-    printf("\nDigite o ano atual: ");
-    scanf("%d", &atual);
+    printf(" Código    Cotação"
+          "\n 1.Dólar   R$4,96"
+          "\n 2.Euro    R$5,38"
+          "\n 3.Libra   R$6,29"
+          "\n Digite o código da moeda desejada: \n");
+    scanf("%d", &codigo);
 
-    idade = atual - nasc;
-    idade2050 = 2050 - nasc;
-
-    printf("\nSua idade é %d anos", idade);
-    printf("\nEm 2050, você terá %d anos\n", idade2050);
+switch(codigo) {
+case 1:
+    convertido = real * 4.96;
+    break;
+case 2:
+    convertido = real * 5.38;
+    break;
+case 3:
+    convertido = real * 6.29;
+    break;
+default:
+    printf("\n Digite um código válido \n");
+    }
+    printf("\nO valor convertido é: %.2f", convertido);
 }
