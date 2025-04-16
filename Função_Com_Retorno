@@ -1,36 +1,27 @@
-/* 1. Faça um programa que receba o salário-base de um funcionário. Uma função com retorno
+/*1. Faça um programa que receba o salário-base de um funcionário. Uma função com retorno
 deverá calcular o salário a receber sabendo-se que esse funcionário tem gratificação de 5% sobre o
 salário-base e paga imposto de 7% sobre o salário-base. */
-
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
 
-float media(float nota1, float nota2, float nota3);
+float calcula_sal(float salario); //protótipo da função
 
 int main(){
     setlocale(LC_ALL, "Portuguese");
 
-float n1, n2, n3, R;
+    float sal, R;
 
-printf("Digite a primeira nota: \n");
-scanf("%f", &n1);
-printf("Digite a segunda nota: \n");
-scanf("%f", &n2);
-printf("Digite a terceira nota: \n");
-scanf("%f", &n3);
+    printf(" \nDigite o valor do salário: ");
+    scanf("%f", &sal);
 
-//CHAMADA DA FUNÇÃO
-R = media(n1, n2, n3);
-
-//SAÍDA DE DADOS
-printf("A média é: %.1f", R);
-
+    R = calcula_sal(sal); // R recebe o return da função
+    printf("\n Salário a receber: R$ %.2f", R);
 }
+float calcula_sal(float salario) {
+    float sal_receber;
 
-float media(float nota1, float nota2, float nota3){
-    float media;
-    media = (nota1 + nota2 + nota3) / 3;
-
+    sal_receber = salario + (salario*0.05) - (salario*0.07);
+    return sal_receber;
 }
