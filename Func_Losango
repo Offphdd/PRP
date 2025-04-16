@@ -1,6 +1,6 @@
-/* 2. FaÁa um programa que calcule e mostre a ·rea de um losango. Para isso, os dados devem
-recebidos na funÁ„o principal e uma funÁ„o com retorno dever· efetuar o c·lculo. O resultado
-dever· ser mostrado na funÁ„o principal.
+/* 2. Fa√ßa um programa que calcule e mostre a √°rea de um losango. Para isso, os dados devem
+recebidos na fun√ß√£o principal e uma fun√ß√£o com retorno dever√° efetuar o c√°lculo. O resultado
+dever√° ser mostrado na fun√ß√£o principal.
 Sabe-se que A = (diagonal maior * diagonal menor)/2 */
 
 #include <stdio.h>
@@ -19,7 +19,7 @@ int main(){
     scanf("%f", &d_menor);
 
     R = calcula_area(d_maior, d_menor);
-    printf("\n A ·rea do losango È: %.2f", R);
+    printf("\n A √°rea do losango √©: %.2f", R);
 }
 float calcula_area(float diagonal_maior, float diagonal_menor) {
     float area;
