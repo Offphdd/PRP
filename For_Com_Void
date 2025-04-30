@@ -1,5 +1,5 @@
-/* Faça um algoritmo que receba um número, calcule e mostre
-tabuada desse número */
+/* FaÃ§a um algoritmo que receba um nÃºmero, calcule e mostre
+tabuada desse nÃºmero */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,7 +13,7 @@ int main()
 
     int num;
 
-    printf("\n Digite o número desejado: \n");
+    printf("\n Digite o nÃºmero desejado: \n");
     scanf("%d", &num);
 
     tab(num);
