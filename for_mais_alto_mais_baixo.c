@@ -1,7 +1,7 @@
-/* 5 - Faça um programa que leia dez conjuntos de dois valores, o
-primeiro representando o número do aluno e o segundo
-representando a sua altura em centímetros. Encontre o aluno mais
-alto e o mais baixo. Mostre o número do aluno mais alto e o número
+/* 5 - FaÃ§a um programa que leia dez conjuntos de dois valores, o
+primeiro representando o nÃºmero do aluno e o segundo
+representando a sua altura em centÃ­metros. Encontre o aluno mais
+alto e o mais baixo. Mostre o nÃºmero do aluno mais alto e o nÃºmero
 do aluno mais baixo. */
 
 #include <stdio.h>
@@ -15,8 +15,8 @@ int main()
    int matricula, x, matr_baixo, matr_alto;
    float altura, mais_alto=0, mais_baixo=3;
 
-for(x=1; x<=3; x++){
-        printf("\nInforme a matrícula do aluno: \n");
+for(x=1; x<=10; x++){
+        printf("\nInforme a matrÃ­cula do aluno: \n");
         scanf("%d", &matricula);
         printf("\nInforme a altura do aluno: \n");
         scanf("%f", &altura);
@@ -30,7 +30,7 @@ for(x=1; x<=3; x++){
             matr_baixo = matricula;
         }
     }
-    printf("\nO aluno mais alto é %d, com %.2f de altura", matr_alto, mais_alto);
-            printf("\nO aluno mais baixo é %d, com %.2f de altura", matr_baixo, mais_baixo);
+    printf("\nO aluno mais alto Ã© %d, com %.2f de altura", matr_alto, mais_alto);
+            printf("\nO aluno mais baixo Ã© %d, com %.2f de altura", matr_baixo, mais_baixo);
 }
 
