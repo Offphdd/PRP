@@ -1,0 +1,33 @@
+/* 1. Crie um programa que leia 10 números reais na função principal e armazene-os em um vetor. Um função
+sem retorno deverá mostrar os valores armazenados nas posições pares do vetor.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#define MAX 10
+
+void func_pares(float VET[]); // função sem retorno
+
+int main() {
+
+    setlocale(LC_ALL, "Portuguese");
+
+    float V[MAX];
+    int x;
+
+    for(x = 0; x < MAX; x++) {
+        printf("\nDigite o valor real para V[%d]: ", x);
+        scanf("%f", &V[x]);
+    }
+
+    func_pares(V); // função sem retorno para mostrar posições pares
+}
+
+void func_pares(float VET[]) {
+    int x;
+    printf("\nValores armazenados nas posições pares do vetor:\n");
+    for(x = 0; x < MAX; x += 2) {
+        printf("Posição %d: %.2f\n", x, VET[x]);
+    }
+}
