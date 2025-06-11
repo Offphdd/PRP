@@ -30,5 +30,5 @@ void somaMatriz(int MAT[L][C]) {
             soma = soma + MAT[i][j];
     }
         }
-    printf("\nA soma da matriz é: %d", soma);
+    printf("\nA soma da matriz Ã©: %d", soma);
             }
