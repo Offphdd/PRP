@@ -20,10 +20,10 @@ int main()
             scanf("%d", &M[i][j]);
         }
     }
-        R = somaMatriz(M); //chama da função COM retorno
-        printf("\nA soma da matriz é: %d", R);
+        R = somaMatriz(M); //chama da funÃ§Ã£o COM retorno
+        printf("\nA soma da matriz Ã©: %d", R);
         media = R / (L * C);
-        printf("\nA média da matriz é: %.2f", media);
+        printf("\nA mÃ©dia da matriz Ã©: %.2f", media);
 }
 
 int somaMatriz(int MAT[L][C]) {
